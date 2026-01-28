@@ -15,11 +15,13 @@ public class QuizOption {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long optionId;
 
-    private String optionText;
-    private boolean isCorrect;
+    @Column(nullable = false)
+    private String text;
+
+    @Column(nullable = false)
+    private boolean correct;
 
     @ManyToOne
-    @JoinColumn(name = "question_id")
+    @JoinColumn(name = "question_id", nullable = false)
     private QuizQuestion question;
 }
-
