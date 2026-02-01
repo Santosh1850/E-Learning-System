@@ -72,6 +72,19 @@ public class AuthController {
         return ResponseEntity.ok(new JwtResponseDTO(token));
     }
 
+    
+    // ---------- ADMIN ----------
+
+    @PostMapping("/admin/login")
+    public ResponseEntity<JwtResponseDTO> adminLogin(
+            @Valid @RequestBody AdminLoginDTO dto) {
+
+        AdminResponseDTO admin = adminService.login(dto);
+        String token = jwtUtil.generateToken(admin.getEmail(), "ADMIN");
+
+        return ResponseEntity.ok(new JwtResponseDTO(token));
+    }
+
  
     // ---------- PASSWORD ----------
 
