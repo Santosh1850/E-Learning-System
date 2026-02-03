@@ -1,4 +1,4 @@
-package com.elearning.serviceImpl;
+package com.elearning.serviceimpl;
 
 import com.elearning.dtos.QuizSubmitRequestDTO;
 import com.elearning.dtos.QuizSubmitResponseDTO;

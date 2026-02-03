@@ -1,4 +1,4 @@
-package com.elearning.serviceImpl;
+package com.elearning.serviceimpl;
 
 import com.elearning.dtos.ForgotPasswordDTO;
 import com.elearning.dtos.ResetPasswordDTO;

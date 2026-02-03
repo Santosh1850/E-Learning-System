@@ -1,4 +1,4 @@
-package com.elearning.serviceImpl;
+package com.elearning.serviceimpl;
 
 import org.springframework.stereotype.Service;
 

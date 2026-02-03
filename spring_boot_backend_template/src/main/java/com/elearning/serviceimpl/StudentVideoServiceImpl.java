@@ -1,4 +1,4 @@
-package com.elearning.serviceImpl;
+package com.elearning.serviceimpl;
 
 import java.util.List;
 import java.util.stream.Collectors;

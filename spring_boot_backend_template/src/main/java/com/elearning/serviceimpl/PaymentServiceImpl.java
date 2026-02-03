@@ -1,4 +1,4 @@
-package com.elearning.serviceImpl;
+package com.elearning.serviceimpl;
 
 import com.elearning.entity.Course;
 import com.elearning.entity.Enrollment;
